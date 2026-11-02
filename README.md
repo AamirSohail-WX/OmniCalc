@@ -237,8 +237,8 @@ OmniCalc is an independent software project created and maintained by **Mrhi3e**
 
 The project focuses on bringing useful mathematical functionality into one accessible, thoughtfully designed application.
 
-**Developer:** Mrhi3e
-**Project:** OmniCalc
+**Developer:** Mrhi3e<br>
+**Project:** OmniCalc<br>
 **Official Website:** https://aamirsohail-wx.github.io/OmniCalc/
 
 ---
