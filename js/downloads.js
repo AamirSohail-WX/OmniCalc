@@ -4,9 +4,14 @@
 (function () {
   var c = window.OMNICALC_CONFIG;
   if (!c) return;
+
+  var catalog = c.downloads || c;
+
   document.querySelectorAll("[data-download]").forEach(function (card) {
-    var d = c.downloads[card.getAttribute("data-download")];
+    var key = card.getAttribute("data-download");
+    var d = catalog[key];
     if (!d) return;
+
     var vals = {
       version: d.version || c.version,
       size: d.size,
@@ -14,19 +19,23 @@
       platform: d.platform,
       requirements: d.requirements,
     };
+
     Object.keys(vals).forEach(function (k) {
       var el = card.querySelector('[data-field="' + k + '"]');
       if (el && vals[k]) el.textContent = vals[k];
     });
+
     var btn = card.querySelector("[data-dl-btn]"),
       status = card.querySelector("[data-dl-status]");
     var url = (d.url || "").trim();
+
     if (url) {
       btn.setAttribute("href", url);
       btn.setAttribute("download", d.filename || "");
       btn.removeAttribute("role");
       return;
     }
+
     btn.setAttribute("href", "#");
     btn.setAttribute("role", "button");
     btn.addEventListener("click", function (e) {
