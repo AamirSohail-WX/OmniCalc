@@ -43,7 +43,7 @@ var OMNICALC_CONFIG = {
   screenshotFolder: "assets/screenshots/",
   screenshots: [
     {
-      file: "Capture.PNG",
+      file: "pc5.jpeg",
       caption: "Home screen",
       alt: "OmniCalc home screen (placeholder image)",
     },
