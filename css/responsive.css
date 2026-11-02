@@ -1,0 +1,115 @@
+/* Responsive rules: tablet (<=900px) and phone (<=640px). Tested widths: 320, 375, 430, 768, 1024, 1440. */
+@media (max-width: 900px) {
+  .dl-grid,
+  .feat-grid,
+  .contact-grid,
+  .steps {
+    grid-template-columns: 1fr 1fr;
+  }
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .docs {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .doc-nav {
+    position: static;
+    max-height: none;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0 14px 12px;
+    background: var(--surface);
+  }
+  .doc-nav summary {
+    display: block;
+    cursor: pointer;
+    padding: 12px 0;
+    font-weight: 600;
+  }
+  .doc-nav ul {
+    max-height: 45vh;
+    overflow-y: auto;
+  }
+}
+@media (max-width: 760px) {
+  .menu-btn {
+    display: inline-grid;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 20px 16px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .site-header[data-open="true"] .nav-links {
+    display: flex;
+  }
+  .nav-links a {
+    padding: 14px 8px;
+    font-size: 1.05rem;
+    border-radius: 0;
+    box-shadow: none !important;
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-links a[aria-current="page"] {
+    font-weight: 700;
+  }
+  .nav-links li:last-child a {
+    border-bottom: 0;
+  }
+}
+@media (max-width: 640px) {
+  body {
+    font-size: 1rem;
+  }
+  .section {
+    padding: 60px 0;
+  }
+  .hero {
+    padding: 52px 0 44px;
+  }
+  .dl-grid,
+  .feat-grid,
+  .contact-grid,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+  .actions .btn {
+    width: 100%;
+  }
+  .hero-shot {
+    margin-top: 36px;
+    border-radius: 12px;
+  }
+  .page-head {
+    padding: 48px 0 28px;
+  }
+  .lb-prev,
+  .lb-next {
+    top: auto;
+    bottom: 16px;
+    transform: none;
+  }
+  .lightbox img {
+    max-height: calc(100vh - 170px);
+  }
+  .g-dot {
+    width: 26px;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    width: min(100% - 28px, var(--max));
+  }
+  .brand span {
+    font-size: 1rem;
+  }
+}

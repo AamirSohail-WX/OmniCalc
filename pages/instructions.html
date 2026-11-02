@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How to Use — OmniCalc</title>
+    <meta
+      name="description"
+      content="Searchable documentation for OmniCalc: installation, every calculator and tool, settings and troubleshooting."
+    />
+    <!-- CANONICAL + SOCIAL: replace YOUR-DOMAIN.example with your real address once the site is published (see WEBSITE-SETUP.md). -->
+    <link
+      rel="canonical"
+      href="https://YOUR-DOMAIN.example/pages/instructions.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="OmniCalc" />
+    <meta property="og:title" content="How to Use — OmniCalc" />
+    <meta
+      property="og:description"
+      content="Searchable documentation for OmniCalc: installation, every calculator and tool, settings and troubleshooting."
+    />
+    <meta
+      property="og:url"
+      content="https://YOUR-DOMAIN.example/pages/instructions.html"
+    />
+    <meta
+      property="og:image"
+      content="https://YOUR-DOMAIN.example/assets/images/og-image.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="How to Use — OmniCalc" />
+    <meta
+      name="twitter:description"
+      content="Searchable documentation for OmniCalc: installation, every calculator and tool, settings and troubleshooting."
+    />
+    <meta name="theme-color" content="#0b0b0b" />
+    <link rel="icon" href="../assets/logo/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="../assets/logo/favicon-32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link rel="icon" href="../assets/logo/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="../assets/logo/apple-touch-icon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <!-- Must stay in <head> and NOT deferred: sets the saved theme before the page paints. -->
+    <script src="../js/theme.js"></script>
+  </head>
+  <body data-root="../">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header" data-open="false">
+      <div class="container nav">
+        <a class="brand" href="../index.html" aria-label="OmniCalc home"
+          ><img
+            src="../assets/logo/omnicalc-logo.png"
+            alt=""
+            width="30"
+            height="30"
+          /><span>OmniCalc</span></a
+        >
+        <nav aria-label="Main">
+          <ul class="nav-links" id="site-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+              <a href="instructions.html" aria-current="page">How to Use</a>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          class="icon-btn theme-toggle"
+          type="button"
+          data-theme-toggle
+          aria-label="Switch to dark theme"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            class="i-moon"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linejoin="round"
+          >
+            <path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z" /></svg
+          ><svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            class="i-sun"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"
+            />
+          </svg>
+        </button>
+        <button
+          class="icon-btn menu-btn"
+          type="button"
+          data-menu-btn
+          aria-expanded="false"
+          aria-controls="site-menu"
+          aria-label="Open menu"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+          >
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-head">
+        <div class="container">
+          <h1>How to Use OmniCalc</h1>
+          <p class="lead">
+            Installation, every tool, and troubleshooting, written for
+            non-specialists.
+          </p>
+        </div>
+      </section>
+      <div class="container docs">
+        <details class="doc-nav" open>
+          <summary>On this page</summary>
+          <label
+            class="sr-only"
+            for="doc-search"
+            style="position: absolute; left: -999px"
+            >Search the documentation</label
+          ><input
+            id="doc-search"
+            class="doc-search"
+            type="search"
+            placeholder="Search the documentation"
+            autocomplete="off"
+          />
+          <p
+            id="doc-live"
+            class="sr-only"
+            role="status"
+            aria-live="polite"
+            style="position: absolute; left: -999px"
+          ></p>
+          <ul>
+            <li class="grp">Basics</li>
+            <li><a href="#getting-started">Getting started</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li class="grp">Calculators</li>
+            <li><a href="#standard">Standard Calculator</a></li>
+            <li><a href="#scientific">Scientific Calculator</a></li>
+            <li><a href="#percentage">Percentage</a></li>
+            <li><a href="#datetime">Date &amp; Time</a></li>
+            <li class="grp">Math</li>
+            <li><a href="#graphing">Graphing</a></li>
+            <li><a href="#equations">Equation Solver</a></li>
+            <li><a href="#matrices">Matrices</a></li>
+            <li><a href="#vectors">Vectors</a></li>
+            <li><a href="#complex">Complex Numbers</a></li>
+            <li><a href="#statistics">Statistics</a></li>
+            <li><a href="#numtheory">Number Theory</a></li>
+            <li class="grp">Convert</li>
+            <li><a href="#bases">Number Bases</a></li>
+            <li><a href="#units">Unit Converter</a></li>
+            <li><a href="#custom">Custom Conversions</a></li>
+            <li class="grp">Reference</li>
+            <li><a href="#formulas">Formula Library</a></li>
+            <li><a href="#history">Calculation History</a></li>
+            <li><a href="#favorites">Favorites</a></li>
+            <li><a href="#settings">Settings &amp; Themes</a></li>
+            <li class="grp">Help</li>
+            <li><a href="#troubleshooting">Troubleshooting</a></li>
+          </ul>
+        </details>
+        <div>
+          <div id="doc-content">
+            <section class="doc-sec" id="getting-started">
+              <h2>Getting started</h2>
+              <p>
+                OmniCalc opens on a home screen made of cards, one per tool.
+                Pick a card to open that tool. On first launch you see a working
+                calculator and a short tour that you can dismiss.
+              </p>
+              <h4>Moving around</h4>
+              <ul>
+                <li>
+                  Use the arrows (or <kbd>&larr;</kbd> / <kbd>&rarr;</kbd>) in
+                  the carousel to browse the cards. A grid view is available in
+                  Settings.
+                </li>
+                <li>
+                  <kbd>Ctrl</kbd>+<kbd>K</kbd> searches tools,
+                  <kbd>Alt</kbd>+<kbd>H</kbd> returns home, <kbd>Alt</kbd>+<kbd
+                    >1</kbd
+                  >
+                  to <kbd>8</kbd> open the first eight home cards,
+                  <kbd>Ctrl</kbd>+<kbd>,</kbd> opens Settings.
+                </li>
+                <li>
+                  In the calculators, digits and operators type straight in when
+                  no field is focused. <kbd>Enter</kbd> or
+                  <kbd>=</kbd> evaluates, <kbd>Esc</kbd> clears.
+                </li>
+              </ul>
+              <p class="muted">
+                Keyboard shortcuts apply mainly to the Windows version.
+                Everything is also reachable with taps or clicks.
+              </p>
+            </section>
+            <section class="doc-sec" id="installation">
+              <h2>Installation</h2>
+             
+              <h4>Android (APK)</h4>
+              <ol>
+                <li>
+                  Download the APK on your phone from the
+                  <a href="downloads.html">Downloads</a> page. Requires Android
+                  7.0 (API 24) or newer.
+                </li>
+                <li>
+                  Open the file. Because it is not installed from an app store,
+                  Android asks you to allow installs from your browser or file
+                  manager. The exact setting name differs between phones.
+                </li>
+                <li>Tap Install, then open OmniCalc.</li>
+              </ol>
+              <h4>Windows 64-bit installer</h4>
+              <ol>
+                <li>
+                  Download the installer and run it. Windows 10 or 11 (64-bit).
+                </li>
+                <li>
+                  The installer is not code-signed, so Windows SmartScreen may
+                  warn you. Choose <em>More info</em>, then <em>Run anyway</em>.
+                </li>
+                <li>
+                  Pick an install folder if you want, finish the wizard, and
+                  start OmniCalc from the Start menu or desktop shortcut.
+                </li>
+              </ol>
+              <h4>Windows portable</h4>
+              <ol>
+                <li>Download the portable file and put it in any folder.</li>
+                <li>
+                  Double-click to run. No installation step. The same
+                  SmartScreen notice may appear.
+                </li>
+              </ol>
+            </section>
+            <section class="doc-sec" id="standard">
+              <h2>Standard Calculator</h2>
+              <h4>What it does</h4>
+              <p>
+                Everyday arithmetic with a live preview of the answer while you
+                type, memory keys, percentages, expression editing and one-click
+                copy.
+              </p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the
+                <strong>Standard Calculator</strong> card (or press
+                <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>
+                  Type or tap an expression such as
+                  <code>12 + 8 &times; 3</code>. The preview updates as you go.
+                </li>
+                <li>
+                  Press <kbd>=</kbd> to finish. The next operation continues
+                  from the full-precision value, so
+                  <code>1 &divide; 3 &times; 3</code> gives exactly 1.
+                </li>
+                <li>
+                  Press <kbd>Ctrl</kbd>+<kbd>C</kbd> (with no text selected) to
+                  copy the result. <kbd>&uarr;</kbd>/<kbd>&darr;</kbd> in the
+                  expression box recall earlier expressions.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p>
+                <code>200 + 10%</code> gives 220, because
+                <code>A + B%</code> means A + A&times;B/100.
+              </p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>Expecting <code>200 + 10%</code> to be 210.</li>
+                <li>
+                  Typing malformed thousands separators like <code>1,23</code>.
+                  They are rejected, never guessed.
+                </li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="scientific">
+              <h2>Scientific Calculator</h2>
+              <h4>What it does</h4>
+              <p>
+                Trigonometry (plus inverse and hyperbolic), logarithms, powers
+                and roots, factorials, nCr and nPr, with a DEG/RAD switch and
+                compact or expanded layouts.
+              </p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the
+                <strong>Scientific Calculator</strong> card (or press
+                <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>Choose DEG or RAD first, then enter the expression.</li>
+                <li>
+                  For a logarithm with another base type
+                  <code>log(x, base)</code> in the field. Constants available:
+                  <code>pi</code>, <code>e</code>, <code>tau</code>,
+                  <code>phi</code>, <code>i</code>.
+                </li>
+                <li>
+                  The EXP key adds a power of ten to the current number:
+                  <code>2 &divide; 5 EXP 3</code> is 2/5E3 = 0.0004.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p>In DEG mode, <code>sin(30)</code> gives 0.5.</p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>Forgetting the angle mode.</li>
+                <li>
+                  Entering <code>5 cm</code>. Unit symbols are not supported
+                  here; use the Unit Converter.
+                </li>
+                <li>
+                  Expecting <code>&radic;(&minus;4)</code> to work. It is a
+                  domain error unless the &ldquo;Allow complex results&rdquo;
+                  option is on.
+                </li>
+                <li>
+                  Reading very large integers: beyond 2<sup>53</sup> numbers are
+                  shown in scientific notation because doubles are no longer
+                  exact.
+                </li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="percentage">
+              <h2>Percentage</h2>
+              <h4>What it does</h4>
+              <p>Eight common percentage questions in one tool.</p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the <strong>Percentage</strong> card
+                (or press <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>
+                  Pick a mode: What is X% of Y?, X is what percentage of Y?,
+                  Percentage increase, Percentage decrease, Percentage change
+                  (old &rarr; new), Reverse (X is P% of what?), Discount, or
+                  Markup on cost.
+                </li>
+                <li>
+                  Fill in the two labelled boxes with plain numbers (no % sign)
+                  and read the result rows.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p>Discount mode with original price 80 and 25% gives 60.</p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>
+                  Swapping the two boxes: read each label (part vs whole, old vs
+                  new).
+                </li>
+                <li>Typing the % symbol into a number box.</li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="datetime">
+              <h2>Date &amp; Time</h2>
+              <h4>What it does</h4>
+              <p>
+                Date differences, adding or subtracting time, exact age,
+                leap-year facts and time-zone conversion.
+              </p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the
+                <strong>Date &amp; Time</strong> card (or press
+                <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>
+                  Choose a date tool: Difference, Add / subtract, Age, Leap year
+                  or Time zones.
+                </li>
+                <li>
+                  Enter the dates (for Age: Date of birth and Age on).
+                  &ldquo;Today&rdquo; means your local calendar date.
+                </li>
+                <li>
+                  For zone-aware tools enter an IANA zone name such as
+                  <code>Asia/Karachi</code> or <code>Europe/London</code>.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p>
+                Difference between two dates returns the span between them; Leap
+                year shows the days in February and in the year.
+              </p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>
+                  Typing zone abbreviations like PST instead of IANA names.
+                </li>
+                <li>
+                  Expecting hours to behave like days: years, months, weeks and
+                  days keep the same clock time across daylight-saving changes,
+                  while hours and minutes are exact elapsed time.
+                </li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="graphing">
+              <h2>Graphing</h2>
+              <h4>What it does</h4>
+              <p>
+                Plots one or more functions (Cartesian and polar), with pan,
+                zoom, estimated intersections and a table of values.
+              </p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the <strong>Graphing</strong> card (or
+                press <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>
+                  Type a function in the Function box, for example
+                  <code>x^2 - 4</code> or <code>sin(x)</code>, and add more if
+                  you want to compare them.
+                </li>
+                <li>Adjust the View range, then pan and zoom the plot.</li>
+                <li>
+                  Use Intersections (estimates) to compare a First and a Second
+                  function. Use Table of values with Start x, Step and Rows.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p>
+                Plot <code>x^2 - 4</code>: the curve crosses the x-axis at
+                &minus;2 and 2.
+              </p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>Treating intersections as exact: they are estimates.</li>
+                <li>
+                  Blank plot: the plotting library loads when the tool opens.
+                  The table of values shows the same data meanwhile.
+                </li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="equations">
+              <h2>Equation Solver</h2>
+              <h4>What it does</h4>
+              <p>
+                Solves one equation with one unknown or a linear system. Roots
+                are checked by substituting them back.
+              </p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the
+                <strong>Equation Solver</strong> card (or press
+                <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>
+                  Mode <em>One equation</em>: type the equation, optionally name
+                  the Variable (it is auto-detected). Linear, quadratic and
+                  polynomial equations up to degree 10 are supported; other
+                  equations use a numeric scan between the search range minimum
+                  and maximum.
+                </li>
+                <li>
+                  Mode <em>Linear system</em>: one equation per line. The tool
+                  reports a unique solution, no solution, or infinitely many.
+                </li>
+                <li>
+                  Repeated roots are listed once with their multiplicity.
+                  Step-by-step working exists for linear and quadratic equations
+                  only.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p>
+                <code>x^2 - 5x + 6 = 0</code> gives x = 2 and x = 3. The system
+                <code>2x + y = 5</code> / <code>x - y = 1</code> gives x = 2, y
+                = 1.
+              </p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>
+                  Expecting general symbolic algebra. OmniCalc does not do that.
+                </li>
+                <li>
+                  Using a search range that does not contain the root of a
+                  non-polynomial equation.
+                </li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="matrices">
+              <h2>Matrices</h2>
+              <h4>What it does</h4>
+              <p>
+                Add, subtract, multiply, scalar multiply, transpose,
+                determinant, inverse, rank and trace, up to 20&times;20.
+              </p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the <strong>Matrices</strong> card (or
+                press <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>
+                  Enter Matrix A (and Matrix B when the operation needs it).
+                </li>
+                <li>
+                  Choose the Operation, set Scalar k if needed, and read the
+                  result.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p>The determinant of [[1, 2], [3, 4]] is &minus;2.</p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>Multiplying matrices whose sizes do not match.</li>
+                <li>
+                  Asking for the inverse or determinant of a non-square matrix,
+                  or the inverse of a singular one.
+                </li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="vectors">
+              <h2>Vectors</h2>
+              <h4>What it does</h4>
+              <p>
+                Add, subtract, scale, dot and cross products, magnitude, angle
+                between vectors and unit vectors.
+              </p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the <strong>Vectors</strong> card (or
+                press <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>
+                  Enter Vector A and Vector B with components separated by
+                  commas or spaces.
+                </li>
+                <li>Choose the Operation. The cross product is 3D only.</li>
+              </ul>
+              <h4>Example</h4>
+              <p>A = (1, 2, 3) and B = (4, 5, 6): the dot product is 32.</p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>Using vectors of different lengths.</li>
+                <li>Asking for a cross product of 2D vectors.</li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="complex">
+              <h2>Complex Numbers</h2>
+              <h4>What it does</h4>
+              <p>
+                Sum, difference, product, quotient, power, conjugate, magnitude,
+                argument (degrees or radians), polar to rectangular conversion
+                and all n-th roots.
+              </p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the
+                <strong>Complex Numbers</strong> card (or press
+                <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>
+                  Enter z&#8321; (and z&#8322; if needed) using
+                  <code>i</code> for the imaginary unit, for example
+                  <code>3+4i</code>.
+                </li>
+                <li>
+                  Pick the operation and read the rectangular and polar results.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p><code>(1+2i)(3+4i)</code> = &minus;5 + 10i.</p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>Writing <code>j</code> instead of <code>i</code>.</li>
+                <li>Mixing up the argument in degrees and in radians.</li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="statistics">
+              <h2>Statistics</h2>
+              <h4>What it does</h4>
+              <p>
+                Count, sum, mean, median, mode, minimum, maximum, range, sample
+                and population variance and standard deviation, quartiles,
+                interquartile range and a frequency table. CSV import and export
+                are supported.
+              </p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the <strong>Statistics</strong> card
+                (or press <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>Enter your numbers (or import a CSV).</li>
+                <li>
+                  Read the summary. Quartiles use the median-of-halves method.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p>
+                Data 2, 4, 4, 4, 5, 5, 7, 9: mean 5, population standard
+                deviation 2, sample standard deviation about 2.14.
+              </p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>
+                  Using the sample figure when you have the whole population, or
+                  the reverse.
+                </li>
+                <li>
+                  Comparing quartiles with software that uses a different
+                  quartile method.
+                </li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="numtheory">
+              <h2>Number Theory</h2>
+              <h4>What it does</h4>
+              <p>
+                Prime test, prime factorization, divisors, GCD, LCM,
+                divisibility, quotient and remainder, using exact integer
+                arithmetic up to 200 digits.
+              </p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the <strong>Number Theory</strong> card
+                (or press <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>
+                  Enter an integer to analyse it, or a list of integers for GCD
+                  and LCM.
+                </li>
+                <li>
+                  Numbers up to 10<sup>15</sup> are factored immediately. Larger
+                  ones need the &ldquo;Factor in background&rdquo; button. It
+                  runs for up to 10 seconds, can be cancelled, and incomplete
+                  answers are labelled PARTIAL.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p>GCD of 48 and 18 is 6 and their LCM is 144.</p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>Treating a PARTIAL factorization as complete.</li>
+                <li>
+                  Forgetting that primality is exact below about
+                  3.3&times;10<sup>24</sup> and &ldquo;probable&rdquo; above it.
+                </li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="bases">
+              <h2>Number Bases</h2>
+              <h4>What it does</h4>
+              <p>
+                Converts between binary, octal, decimal, hexadecimal and any
+                base from 2 to 36, with two&rsquo;s-complement and bit-pattern
+                views.
+              </p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the <strong>Number Bases</strong> card
+                (or press <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>Enter the Value and choose the Input base.</li>
+                <li>
+                  Read the conversions. Use Custom base (2&ndash;36) for other
+                  bases and Two&rsquo;s complement width for signed values.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p>Decimal 255 is binary 11111111 and hexadecimal FF.</p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>
+                  Using digits that do not exist in the input base (for example
+                  2 in binary).
+                </li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="units">
+              <h2>Unit Converter</h2>
+              <h4>What it does</h4>
+              <p>
+                Converts within 15 categories, including length, mass,
+                temperature, speed, area, volume, time, data storage, energy,
+                power, pressure, angle and frequency.
+              </p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the
+                <strong>Unit Converter</strong> card (or press
+                <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>
+                  Choose a category, then the From and To units, and type a
+                  value.
+                </li>
+                <li>
+                  Temperature uses offsets correctly (not just ratios). Data
+                  storage distinguishes decimal and binary units. Regional units
+                  such as marla and kanal show both common definitions, clearly
+                  labelled.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p>100 &deg;C is 212 &deg;F.</p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>
+                  Trying to convert between different kinds of quantity (for
+                  example length to mass).
+                </li>
+                <li>
+                  Entering compound units such as km/h to m/s as free text. Use
+                  the Speed category instead.
+                </li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="custom">
+              <h2>Custom Conversions</h2>
+              <h4>What it does</h4>
+              <p>
+                Your own ratios (for example a currency pair) that you can
+                create, edit, rename, duplicate, favorite, search, delete,
+                export and import. Optional live exchange rates are available.
+              </p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the
+                <strong>Custom Conversions</strong> card (or press
+                <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>Create a conversion by entering the ratio you want.</li>
+                <li>
+                  Optional: press <em>Download rates</em> to fetch exchange
+                  rates. This is the only time OmniCalc contacts the internet.
+                  The source, time retrieved and a warning when the rates are
+                  over 24 hours old are shown.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p>
+                If you enter 1 USD = 280 PKR as your own ratio, converting 10
+                USD gives 2,800 PKR. The 280 is only your example, not a rate
+                OmniCalc claims is current.
+              </p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>Treating a ratio you entered as a live market rate.</li>
+                <li>
+                  Expecting live rates without an internet connection. Your own
+                  ratios still work offline.
+                </li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="formulas">
+              <h2>Formula Library</h2>
+              <h4>What it does</h4>
+              <p>
+                More than 50 STEM formulas you can calculate with, plus your own
+                custom formulas.
+              </p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the
+                <strong>Formula Library</strong> card (or press
+                <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>
+                  Search or browse by category, open a formula and fill in the
+                  known values.
+                </li>
+                <li>
+                  Add custom formulas, mark favorites, and import or export your
+                  formulas.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p>
+                Pick a geometry formula, enter the sides you know and read the
+                result.
+              </p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>
+                  Assuming units are enforced: they are shown for information
+                  only, so use consistent units yourself.
+                </li>
+                <li>
+                  Expecting every formula to be rearrangeable. Rearrangements
+                  are written individually for each formula.
+                </li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="history">
+              <h2>Calculation History</h2>
+              <h4>What it does</h4>
+              <p>
+                A saved list of past calculations that you can search, filter,
+                reuse, favorite, delete, clear and export as CSV, TXT or JSON.
+              </p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the <strong>History</strong> card (or
+                press <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>Open History, search or filter, and choose an entry.</li>
+                <li>
+                  Reuse works for the Standard and Scientific calculators. Long
+                  histories load 100 entries at a time.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p>
+                Search &ldquo;sin&rdquo; to list your trigonometry calculations.
+              </p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>
+                  Expecting history to sync between devices. It is saved on the
+                  device you use.
+                </li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="favorites">
+              <h2>Favorites</h2>
+              <h4>What it does</h4>
+              <p>
+                One place for the tools, calculations, formulas and conversions
+                you starred.
+              </p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the <strong>Favorites</strong> card (or
+                press <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>
+                  Star an item where you see the star. Open Favorites to return
+                  to it quickly.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p>Star a conversion you use every week.</p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>
+                  Looking for favorites on another device. They are stored
+                  locally.
+                </li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="settings">
+              <h2>Settings &amp; Themes</h2>
+              <h4>What it does</h4>
+              <p>Appearance, calculation and data options.</p>
+              <h4>Where to find it</h4>
+              <p>
+                On the home screen, open the <strong>Settings</strong> card (or
+                press <kbd>Ctrl</kbd>+<kbd>K</kbd> and search for it).
+              </p>
+              <h4>How to use it</h4>
+              <ul>
+                <li>
+                  Theme: light, dark or follow the system. Also accent colour,
+                  text size, high contrast, reduced motion and optional click
+                  sounds.
+                </li>
+                <li>
+                  Calculation: precision (12 significant digits by default),
+                  number notation and DEG/RAD default. Home screen: carousel or
+                  grid.
+                </li>
+                <li>
+                  Backup: export or import everything as JSON. Import can Merge
+                  with or Replace existing data. Resetting preferences and
+                  deleting saved data are separate actions.
+                </li>
+              </ul>
+              <h4>Example</h4>
+              <p>
+                Switch to dark theme, raise the text size, then export a backup.
+              </p>
+              <h4>Common mistakes</h4>
+              <ul>
+                <li>
+                  Importing with Replace without exporting a backup first.
+                </li>
+              </ul>
+            </section>
+            <section class="doc-sec" id="troubleshooting">
+              <h2>Troubleshooting</h2>
+              <ul>
+                <li>
+                  <strong>Windows SmartScreen warning:</strong> expected for an
+                  unsigned installer. Choose More info, then Run anyway, but
+                  only for files from the official release page.
+                </li>
+                <li>
+                  <strong>Android refuses to install:</strong> allow installs
+                  from the app you used to download the file, then open the APK
+                  again. Your phone must run Android 7.0 or newer.
+                </li>
+                <li>
+                  <strong
+                    >&ldquo;Your latest changes could not be
+                    saved&rdquo;:</strong
+                  >
+                  the storage may be full or read-only. The app keeps retrying.
+                  Settings &rarr; export backup always works.
+                </li>
+                <li>
+                  <strong>Saved data looks reset:</strong> the app keeps a
+                  backup copy when stored data is damaged and shows a recovery
+                  banner.
+                </li>
+                <li>
+                  <strong>A blank graph:</strong> use the table of values under
+                  the graph, then reopen the tool.
+                </li>
+                <li>
+                  <strong>Answers differ in the last digits:</strong>
+                  calculations use standard floating-point numbers. Adjust the
+                  precision in Settings.
+                </li>
+              </ul>
+              <p>
+                Still stuck? Use the <a href="contact.html">Contact</a> page to
+                report a bug.
+              </p>
+            </section>
+            <p id="doc-empty" hidden>
+              No sections match your search. Try fewer or different words.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <button
+      class="icon-btn to-top"
+      type="button"
+      data-to-top
+      aria-label="Back to top"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M6 15l6-6 6 6" />
+      </svg>
+    </button>
+    <footer class="site-footer">
+      <div class="container">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="instructions.html">How to Use</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a data-github>GitHub</a></li>
+        </ul>
+        <p>OmniCalc &copy; 2026 &mdash; Developed by Mrhi3e.</p>
+      </div>
+    </footer>
+    <script src="../js/config.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/documentation.js"></script>
+  </body>
+</html>
