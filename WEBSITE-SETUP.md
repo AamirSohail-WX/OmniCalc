@@ -49,3 +49,9 @@ The gallery, counter, dots and lightbox update automatically.
 - The Windows installer and portable `.exe` and the Android APK had **not been built/verified** in the project files I was given (its README says the NSIS installer step was never run). Build and test them before publishing the links.
 - The Android project says `versionName "1.0"` while the app is `1.1.0`. Consider aligning them (`android/app/build.gradle`); the website shows one version for all downloads unless you override it per download.
 - Android minimum version on the Downloads page (Android 7.0, API 24) comes from `android/variables.gradle`; Windows 10/11 comes from the app README.
+
+
+## Release information pages
+- The homepage `What's New` panel is in `index.html`. Update its version, release date and summary when publishing a new release.
+- `pages/old-versions.html` contains the release archive, platform requirements and known-issues notice. Keep archived downloads only when the corresponding release assets are available.
+- The current 1.1.0 release is marked as the first official release (2 November 2026); no older public release is claimed or linked.

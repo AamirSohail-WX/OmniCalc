@@ -13,6 +13,7 @@ Calculate, graph, solve equations, work with matrices, analyze statistics, conve
 [**🌐 Official Website**](https://aamirsohail-wx.github.io/OmniCalc/) ·
 [**📥 Downloads**](https://aamirsohail-wx.github.io/OmniCalc/pages/downloads.html) ·
 [**📖 Documentation**](https://aamirsohail-wx.github.io/OmniCalc/pages/instructions.html) ·
+[**🗂️ Release History**](https://aamirsohail-wx.github.io/OmniCalc/pages/old-versions.html) ·
 [**ℹ️ About**](https://aamirsohail-wx.github.io/OmniCalc/pages/about.html)
 
 <br>
@@ -41,6 +42,10 @@ Whether you're a student, developer, professional, or someone who simply needs a
 * **Cross-platform:** Available for Windows and Android.
 
 ---
+
+## Release History
+
+The first official public release is **OmniCalc 1.1.0**, published on 2 November 2026. No earlier public release downloads are currently archived. Visit the [release history page](https://aamirsohail-wx.github.io/OmniCalc/pages/old-versions.html) for available versions, platform requirements and known-issue notes.
 
 ## Features
 

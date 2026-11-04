@@ -780,3 +780,33 @@ a[aria-disabled="true"] {
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+
+/* Release notes and version archive */
+.release-layout { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(280px,.85fr); gap:48px; align-items:center; }
+.release-panel,.history-card,.info-card,.notice-card,.empty-archive { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:26px; }
+.release-badge { display:inline-block; padding:5px 9px; border:1px solid var(--border); border-radius:999px; color:var(--muted); font-size:.72rem; font-weight:700; letter-spacing:.08em; }
+.release-version { display:block; font-size:clamp(2.8rem,6vw,4rem); line-height:1.1; letter-spacing:-.05em; margin:14px 0; }
+.release-points { padding-left:1.2rem; margin:16px 0 22px; color:var(--muted); }
+.release-points li { margin:.35em 0; }
+.text-link { display:inline-block; font-weight:600; text-decoration:none; margin-top:8px; }
+.text-link:hover { text-decoration:underline; }
+.release-content { padding-top:28px; padding-bottom:70px; }
+.release-history,.info-section { margin:0 0 64px; }
+.history-card { margin-top:22px; }
+.history-top { display:flex; justify-content:space-between; gap:20px; align-items:flex-start; }
+.history-top h3 { margin:12px 0 4px; font-size:1.5rem; }
+.history-top p { margin-bottom:0; }
+.version-pill { border:1px solid var(--border); border-radius:8px; padding:7px 11px; font-family:var(--mono); white-space:nowrap; }
+.history-points { columns:2; max-width:650px; }
+.empty-archive { margin-top:16px; background:var(--surface-2); }
+.empty-archive h3,.notice-card h3 { margin-bottom:8px; }
+.empty-archive p,.notice-card p { color:var(--muted); margin-bottom:0; }
+.requirements-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-top:20px; }
+.info-card h3 { margin-bottom:12px; }
+.requirement-main { font-size:1.45rem; font-weight:650; margin-bottom:5px; }
+.info-card p:last-child { margin-bottom:0; }
+.small-note { color:var(--muted); font-size:.9rem; margin-top:14px; }
+.notice-card { margin-top:18px; }
+.notice-card .text-link { margin-top:14px; }
+@media (max-width:760px) { .release-layout { grid-template-columns:1fr; gap:26px; } .requirements-grid { grid-template-columns:1fr; } .history-points { columns:1; } .history-top { flex-direction:column; } }

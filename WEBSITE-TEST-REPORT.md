@@ -75,3 +75,16 @@ None in the final run. Two early failures were test-setup issues, fixed and re-r
 - The Windows installer, portable build and Android APK themselves (the website only links to them).
 - Email buttons were checked only for the correct `mailto:` link and encoded subject, not for opening an actual mail app.
 - Canonical/Open Graph tags contain the placeholder domain until you publish.
+
+
+## Update verification — 4 November 2026
+
+The release-history update adds a seventh page (`pages/old-versions.html`) and a homepage `What's New` section for the first official release, OmniCalc 1.1.0 (2 November 2026). The page explicitly states that no earlier public releases are archived yet, rather than inventing older versions. It also adds platform requirements, a known-issues disclosure and a link to the existing installation instructions.
+
+Checks performed on the updated files:
+- All 7 HTML pages parsed successfully and contain an H1.
+- All local file references and local fragment targets checked: 0 missing references.
+- JavaScript syntax checks (`node --check`) passed for all website JS files.
+- Confirmed the Old Versions navigation link is present on every page.
+
+A fresh browser interaction run was attempted, but the execution environment blocked Chromium navigation to both local HTTP and `file://` pages (`ERR_BLOCKED_BY_ADMINISTRATOR`). Therefore browser-level interaction and visual checks for this update are **not verified** here.
